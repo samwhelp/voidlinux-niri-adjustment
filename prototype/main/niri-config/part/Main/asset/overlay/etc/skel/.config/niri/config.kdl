@@ -1,0 +1,47 @@
+
+
+//
+// # Niri Config
+//
+
+
+//
+// ## This File Path
+//
+// * ~/.config/niri/config.kdl
+//
+
+
+
+
+
+//
+// ## Profile
+//
+
+
+
+
+//
+// ## Profile / Default
+//
+
+//include "section/profile/default/init.kdl"
+
+
+
+
+//
+// ## Profile / Test
+//
+
+//include "section/profile/test/init.kdl"
+
+
+
+
+//
+// ## Profile / Main
+//
+
+include "section/profile/main/init.kdl"

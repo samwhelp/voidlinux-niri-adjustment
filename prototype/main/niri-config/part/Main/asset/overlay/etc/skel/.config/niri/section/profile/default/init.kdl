@@ -1,0 +1,17 @@
+
+
+//
+// # Profile / Default
+//
+
+
+
+
+
+//
+// ## Component / Bundle
+//
+
+//include "~/.config/niri/section/bundle/default/config.kdl"
+
+include "../../bundle/default/config.kdl"

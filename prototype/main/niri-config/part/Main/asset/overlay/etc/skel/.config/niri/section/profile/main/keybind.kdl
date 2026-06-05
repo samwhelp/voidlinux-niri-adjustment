@@ -1,0 +1,372 @@
+
+
+binds {
+
+
+
+
+	//
+	// ## System
+	//
+
+	Ctrl+Alt+Delete { quit; }
+	Alt+Ctrl+x { quit; }
+	Alt+Shift+x { spawn "wlogout"; }
+
+
+	//Alt+Shift+z { spawn "swaylock"; }
+	//Alt+Ctrl+z { power-off-monitors; }
+
+	Alt+Ctrl+l { spawn "swaylock"; }
+	Alt+Ctrl+p { power-off-monitors; }
+
+
+
+
+	//
+	// ## Overview
+	//
+
+	Super+v repeat=false { toggle-overview; }
+	Alt+Shift+Slash { show-hotkey-overlay; }
+
+
+
+
+	//
+	// ## Application
+	//
+
+
+
+
+	//
+	// ### Application / Launcher
+	//
+
+	Alt+Shift+d { spawn-sh "rofi -show drun"; }
+	Alt+Shift+r { spawn-sh "rofi -show run"; }
+	//Alt+Shift+w { spawn "rofi -show window"; }
+
+
+
+
+	//
+	// ### Application / Terminal
+	//
+
+	Alt+Return { spawn "xfce4-terminal"; }
+	Alt+Shift+a { spawn "xfce4-terminal"; }
+	Alt+Ctrl+a { spawn "foot"; }
+	Alt+Shift+t { spawn "sakura"; }
+	Alt+Ctrl+t { spawn "kitty"; }
+
+
+
+
+	//
+	// ### Application / Favorite
+	//
+
+	Alt+Shift+f { spawn "thunar"; }
+	Alt+Shift+g { spawn "pcmanfm"; }
+	Alt+Shift+e { spawn "mousepad"; }
+	Alt+Shift+b { spawn-sh "firefox --new-tab about:blank"; }
+	Alt+Shift+v { spawn "pavucontrol"; }
+	Alt+Shift+n { spawn-sh "kitty --class 'nmtui' --title 'Network Settings' nmtui"; }
+
+
+
+
+	//
+	// ## Window
+	//
+
+
+
+
+	//
+	// ### Window / Close
+	//
+
+	Super+q repeat=false { close-window; }
+	Alt+F4 repeat=false { close-window; }
+
+
+
+
+	//
+	// ### Window / Fullscreen
+	//
+
+	Super+f { fullscreen-window; }
+
+
+
+
+	//
+	// ### Window / Resize
+	//
+
+	Super+Ctrl+Up { set-window-height "-5%"; }
+	Super+Ctrl+Down { set-window-height "+5%"; }
+	Super+Ctrl+Left { set-column-width "-5%"; }
+	Super+Ctrl+Right { set-column-width "+5%"; }
+
+	Super+Ctrl+k { set-window-height "-5%"; }
+	Super+Ctrl+j { set-window-height "+5%"; }
+	Super+Ctrl+h { set-column-width "-5%"; }
+	Super+Ctrl+l { set-column-width "+5%"; }
+
+
+
+
+	//
+	// ### Window / Tabbed
+	//
+
+	Super+t { toggle-column-tabbed-display; }
+
+
+
+
+	//
+	// ### Window / Floating or Tiling
+	//
+
+	Super+Escape { toggle-window-floating; }
+	Super+z { switch-focus-between-floating-and-tiling; }
+
+
+
+
+	//
+	// ### Window / Focus
+	//
+
+	Super+a { focus-column-left; }
+	Super+s { focus-column-right; }
+
+	Super+Up { focus-window-up; }
+	Super+Down { focus-window-down; }
+	Super+Left { focus-column-left; }
+	Super+Right { focus-column-right; }
+
+	Super+k { focus-window-up; }
+	Super+j { focus-window-down; }
+	Super+h { focus-column-left; }
+	Super+l { focus-column-right; }
+
+
+	Super+WheelScrollDown cooldown-ms=150 { focus-column-left; }
+	Super+WheelScrollUp cooldown-ms=150 { focus-column-right; }
+
+
+
+
+	//
+	// ### Window / Swap
+	//
+
+	Super+grave { move-column-left; }
+	Super+Tab { move-column-right; }
+
+	Super+Shift+Up { move-window-up; }
+	Super+Shift+Down { move-window-down; }
+	Super+Shift+Left { move-column-left; }
+	Super+Shift+Right { move-column-right; }
+
+	Super+Shift+k { move-window-up; }
+	Super+Shift+j { move-window-down; }
+	Super+Shift+h { move-column-left; }
+	Super+Shift+l { move-column-right; }
+
+
+	Super+Shift+WheelScrollDown cooldown-ms=150 { move-column-left; }
+	Super+Shift+WheelScrollUp cooldown-ms=150 { move-column-right; }
+
+
+
+
+	//
+	// ### Window / Move
+	//
+
+	Super+c { center-column; }
+
+
+
+
+	//
+	// ## Workspace
+	//
+
+
+
+
+	//
+	// ### Workspace / Specific
+	//
+
+	Super+1 { focus-workspace 1; }
+	Super+2 { focus-workspace 2; }
+	Super+3 { focus-workspace 3; }
+	Super+4 { focus-workspace 4; }
+	Super+5 { focus-workspace 5; }
+	Super+6 { focus-workspace 6; }
+	Super+7 { focus-workspace 7; }
+	Super+8 { focus-workspace 8; }
+	Super+9 { focus-workspace 9; }
+
+	Super+Shift+1 { move-column-to-workspace 1; }
+	Super+Shift+2 { move-column-to-workspace 2; }
+	Super+Shift+3 { move-column-to-workspace 3; }
+	Super+Shift+4 { move-column-to-workspace 4; }
+	Super+Shift+5 { move-column-to-workspace 5; }
+	Super+Shift+6 { move-column-to-workspace 6; }
+	Super+Shift+7 { move-column-to-workspace 7; }
+	Super+Shift+8 { move-column-to-workspace 8; }
+	Super+Shift+9 { move-column-to-workspace 9; }
+
+
+
+
+	//
+	// ### Workspace / Focus
+	//
+
+	Alt+a { focus-workspace-up; }
+	Alt+s { focus-workspace-down; }
+
+
+	Alt+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+	Alt+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+
+
+
+
+	//
+	// ### Workspace / Swap
+	//
+
+	Super+Ctrl+a { move-workspace-up; }
+	Super+Ctrl+s { move-workspace-down; }
+
+
+	Alt+Ctrl+WheelScrollUp cooldown-ms=150 { move-workspace-up; }
+	Alt+Ctrl+WheelScrollDown cooldown-ms=150 { move-workspace-down; }
+
+
+
+
+	//
+	// ### Workspace / Window MoveTo
+	//
+
+	Super+Shift+a { move-column-to-workspace-up; }
+	Super+Shift+s { move-column-to-workspace-down; }
+
+
+	Alt+Shift+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
+	Alt+Shift+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+
+
+
+
+	//
+	// ## Column
+	//
+
+
+
+
+	//
+	// ### Column / Window Move
+	//
+
+	Super+BracketLeft { consume-or-expel-window-left; }
+	Super+BracketRight { consume-or-expel-window-right; }
+
+
+	Super+Comma { consume-window-into-column; }
+	Super+Period { expel-window-from-column; }
+
+
+
+
+	//
+	// ### Column / Window Resize
+	//
+
+	Super+w { maximize-column; }
+
+	Super+Shift+w { expand-column-to-available-width; }
+	Super+Ctrl+w { reset-window-height; }
+
+
+	Super+Shift+f { switch-preset-column-width; }
+	Super+Ctrl+f { switch-preset-window-height; }
+
+
+
+
+	//
+	// ## Screenshot
+	//
+
+	Print { screenshot-screen; }
+	Super+Print { screenshot-window; }
+	Ctrl+Print { screenshot; }
+
+
+
+
+	//
+	// ## Brightness
+	//
+
+	//XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+	//XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+
+	XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl set 5%-"; }
+	XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl set +5%"; }
+
+
+
+
+	//
+	// ## Audio
+	//
+
+
+
+
+	//
+	// ### Audio / Volume Control
+	//
+
+	//XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
+	//XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+	//XF86AudioMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+	//XF86AudioMicMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+
+	XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "pamixer -i 5"; }
+	XF86AudioLowerVolume allow-when-locked=true { spawn-sh "pamixer -d 5"; }
+	XF86AudioMute allow-when-locked=true { spawn-sh "pamixer --toggle-mute"; }
+
+
+
+
+	//
+	// ### Audio / Player Control
+	//
+
+	XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+	XF86AudioStop allow-when-locked=true { spawn-sh "playerctl stop"; }
+	XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
+	XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
+
+
+
+
+}

@@ -1,0 +1,26 @@
+
+
+//
+// # Profile / Main
+//
+
+
+
+
+
+//
+// ## Component / Skeleton
+//
+
+//include "~/.config/niri/section/skeleton/main/skel.kdl"
+
+include "../../skeleton/main/skel.kdl"
+
+
+
+
+//
+// ## Component / Keybind
+//
+
+include "keybind.kdl"
